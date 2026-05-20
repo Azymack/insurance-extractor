@@ -4,7 +4,7 @@ import fitz
 import cv2
 import numpy as np
 
-from paddleocr import PPStructureV3
+from paddleocr import PPStructure
 
 
 PDF_PATH = "samples/sample.pdf"
@@ -12,7 +12,7 @@ OUTPUT_JSON = "output/ocr_result.json"
 
 
 # Initialize OCR engine
-engine = PPStructureV3()
+engine = PPStructure(show_log=True)
 
 
 def pdf_to_images(pdf_path):
