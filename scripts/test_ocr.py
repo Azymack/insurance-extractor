@@ -12,7 +12,8 @@ OUTPUT_JSON = "output/ocr_result.json"
 
 
 # Initialize OCR engine
-engine = PPStructure(show_log=True)
+engine = PPStructure(show_log=True,
+use_gpu=False)
 
 
 def pdf_to_images(pdf_path):
