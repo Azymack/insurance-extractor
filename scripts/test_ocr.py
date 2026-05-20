@@ -59,7 +59,7 @@ def run_ocr(pages):
 
         image = page_data["image"]
 
-        result = engine.predict(image)
+        result = engine(image)
 
         results.append({
             "page": page_index,
